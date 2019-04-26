@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		253455E32271A5FF001B52F1 /* FlexibleInputStackBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 253455E12271A5FF001B52F1 /* FlexibleInputStackBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		253456082271A807001B52F1 /* FlexibleInputStackBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253456072271A807001B52F1 /* FlexibleInputStackBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		253455DE2271A5FF001B52F1 /* FlexibleInputStackBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FlexibleInputStackBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		253455E12271A5FF001B52F1 /* FlexibleInputStackBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlexibleInputStackBar.h; sourceTree = "<group>"; };
 		253455E22271A5FF001B52F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253456072271A807001B52F1 /* FlexibleInputStackBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleInputStackBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				253455E12271A5FF001B52F1 /* FlexibleInputStackBar.h */,
 				253455E22271A5FF001B52F1 /* Info.plist */,
+				253456072271A807001B52F1 /* FlexibleInputStackBar.swift */,
 			);
 			path = FlexibleInputStackBar;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					253455DD2271A5FF001B52F1 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253456082271A807001B52F1 /* FlexibleInputStackBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		253455E72271A5FF001B52F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +283,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = xyz.kazuringo.FlexibleInputStackBar;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -285,6 +292,7 @@
 		253455E82271A5FF001B52F1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

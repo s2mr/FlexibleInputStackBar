@@ -12,7 +12,21 @@
 		253455FB2271A646001B52F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253455F92271A646001B52F1 /* Main.storyboard */; };
 		253455FD2271A648001B52F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253455FC2271A648001B52F1 /* Assets.xcassets */; };
 		253456002271A648001B52F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253455FE2271A648001B52F1 /* LaunchScreen.storyboard */; };
+		253456262271ACDD001B52F1 /* FlexibleInputStackBar in Resources */ = {isa = PBXBuildFile; fileRef = 253456252271ACDD001B52F1 /* FlexibleInputStackBar */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		253456182271AC0D001B52F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		253455F22271A646001B52F1 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +36,7 @@
 		253455FC2271A648001B52F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		253455FF2271A648001B52F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		253456012271A648001B52F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253456252271ACDD001B52F1 /* FlexibleInputStackBar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = FlexibleInputStackBar; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +53,7 @@
 		253455E92271A646001B52F1 = {
 			isa = PBXGroup;
 			children = (
+				253456252271ACDD001B52F1 /* FlexibleInputStackBar */,
 				253455F42271A646001B52F1 /* Demo */,
 				253455F32271A646001B52F1 /* Products */,
 			);
@@ -74,6 +90,7 @@
 				253455EE2271A646001B52F1 /* Sources */,
 				253455EF2271A646001B52F1 /* Frameworks */,
 				253455F02271A646001B52F1 /* Resources */,
+				253456182271AC0D001B52F1 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +142,7 @@
 				253456002271A648001B52F1 /* LaunchScreen.storyboard in Resources */,
 				253455FD2271A648001B52F1 /* Assets.xcassets in Resources */,
 				253455FB2271A646001B52F1 /* Main.storyboard in Resources */,
+				253456262271ACDD001B52F1 /* FlexibleInputStackBar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
