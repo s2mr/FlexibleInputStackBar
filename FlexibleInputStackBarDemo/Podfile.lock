@@ -1,0 +1,16 @@
+PODS:
+  - FlexibleInputStackBar (0.0.1)
+
+DEPENDENCIES:
+  - FlexibleInputStackBar (from `..`)
+
+EXTERNAL SOURCES:
+  FlexibleInputStackBar:
+    :path: ".."
+
+SPEC CHECKSUMS:
+  FlexibleInputStackBar: 25f3cda324d1bd660f358b0b1afe9bea6b3b9a83
+
+PODFILE CHECKSUM: 7700bc0c9bb764dd21d5dc0f9042a922e365b0a4
+
+COCOAPODS: 1.6.1
