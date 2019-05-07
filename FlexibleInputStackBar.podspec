@@ -10,5 +10,4 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.source_files = 'FlexibleInputStackBar/**/*.{swift}'
   s.frameworks   = 'UIKit'
-  s.swift_version= "5.0"
 end
