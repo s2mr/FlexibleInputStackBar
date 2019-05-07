@@ -1,0 +1,7 @@
+# FlexibleInputStackBar document generator jazzy settings
+
+copyright: Copyright 2019 FlexibleInputStackBar
+author: Kazumasa Shimomura
+xcodebuild_arguments: [-target, FlexibleInputStackBar-iOS]
+clean: true
+output: ./Documentation
