@@ -2,40 +2,52 @@
 //  FlexibleInputStackBar.swift
 //  FlexibleInputStackBar
 //
-//  Created by 下村 一将 on 2019/04/25.
+//  Created by Kazumasa Shimomura on 2019/04/25.
 //  Copyright © 2019 kazuringo. All rights reserved.
 //
 
 import UIKit
 
-final class InputAccessoryStackBar: UIView {
+public final class FlexibleInputStackBar: UIView {
+    public struct Configuration {
+        public var itemSpacing: CGFloat
+        public var leftStackViewMargin: CGFloat
+        public var rightStackViewMargin: CGFloat
+
+        public static var `default`: Configuration {
+            return .init(itemSpacing: 8.0, leftStackViewMargin: 8.0, rightStackViewMargin: 8.0)
+        }
+    }
+
     private let leftStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
         stack.semanticContentAttribute = .forceLeftToRight
-        stack.spacing = 16.0
+        stack.distribution = .equalSpacing
         return stack
     }()
     private let rightStackView: UIStackView = {
         let stack = UIStackView()
         stack.axis = .horizontal
-        stack.semanticContentAttribute = .forceRightToLeft
-        stack.spacing = 16.0
+        stack.semanticContentAttribute = .forceLeftToRight
+        stack.distribution = .equalSpacing
         return stack
     }()
-    private var _backgroundColor: UIColor = UIColor.blue
-
-    convenience init(frame: CGRect, backgroundColor: UIColor) {
-        self.init(frame: frame)
-        self._backgroundColor = backgroundColor
+    public var configuration: Configuration = .default {
+        didSet {
+            configurationDidUpdate(configuration)
+        }
     }
 
-    override init(frame: CGRect) {
+    public convenience init(height: Double) {
+        self.init(frame: .init(x: 0.0, y: 0.0, width: 0.0, height: height))
+    }
+
+    private override init(frame: CGRect) {
         super.init(frame: frame)
         configure()
-
     }
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         configure()
     }
@@ -44,30 +56,36 @@ final class InputAccessoryStackBar: UIView {
         addSubview(leftStackView)
         addSubview(rightStackView)
 
-        addConstraints([
-            NSLayoutConstraint(item: leftStackView, attribute: .left, relatedBy: .equal, toItem: self, attribute: .left,
-                               multiplier: 1.0, constant: 16.0),
-            NSLayoutConstraint(item: leftStackView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top,
-                               multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: leftStackView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom,
-                               multiplier: 1.0, constant: 0.0),
+        translatesAutoresizingMaskIntoConstraints = false
+        leftStackView.translatesAutoresizingMaskIntoConstraints = false
+        rightStackView.translatesAutoresizingMaskIntoConstraints = false
+
+        NSLayoutConstraint.activate([
+            leftStackView.topAnchor.constraint(equalTo: topAnchor),
+            leftStackView.leftAnchor.constraint(equalTo: leftAnchor, constant: configuration.leftStackViewMargin),
+            leftStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             ])
 
-        addConstraints([
-            NSLayoutConstraint(item: rightStackView, attribute: .right, relatedBy: .equal, toItem: self, attribute: .right,
-                               multiplier: 1.0, constant: -16.0),
-            NSLayoutConstraint(item: rightStackView, attribute: .top, relatedBy: .equal, toItem: self, attribute: .top,
-                               multiplier: 1.0, constant: 0.0),
-            NSLayoutConstraint(item: rightStackView, attribute: .bottom, relatedBy: .equal, toItem: self, attribute: .bottom,
-                               multiplier: 1.0, constant: 0.0),
+        NSLayoutConstraint.activate([
+            rightStackView.topAnchor.constraint(equalTo: topAnchor),
+            rightStackView.rightAnchor.constraint(equalTo: rightAnchor, constant: -configuration.rightStackViewMargin),
+            rightStackView.bottomAnchor.constraint(equalTo: bottomAnchor),
             ])
+
+        configurationDidUpdate(.default)
     }
 
-    func addArrangedSubviewToRight(_ view: UIView) {
+    public func addArrangedSubviewToRight(_ view: UIView) {
         rightStackView.addArrangedSubview(view)
     }
 
-    func addArrangedSubviewToLeft(_ view: UIView) {
+    public func addArrangedSubviewToLeft(_ view: UIView) {
         leftStackView.addArrangedSubview(view)
+    }
+
+    private func configurationDidUpdate(_ configuration: Configuration) {
+        [self.leftStackView, self.rightStackView].forEach {
+            $0.spacing = configuration.itemSpacing
+        }
     }
 }

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  Demo
 //
-//  Created by 下村 一将 on 2019/04/25.
+//  Created by Kazumasa Shimomura on 2019/04/25.
 //  Copyright © 2019 kazuringo. All rights reserved.
 //
 
