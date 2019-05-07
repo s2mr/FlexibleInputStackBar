@@ -1,16 +1,16 @@
 <p align="center">
-   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="test Logo">
+   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="FlexibleInputStackBar Logo">
 </p>
 
 <p align="center">
    <a href="https://developer.apple.com/swift/">
       <img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
    </a>
-   <a href="http://cocoapods.org/pods/test">
-      <img src="https://img.shields.io/cocoapods/v/test.svg?style=flat" alt="Version">
+   <a href="http://cocoapods.org/pods/FlexibleInputStackBar">
+      <img src="https://img.shields.io/cocoapods/v/FlexibleInputStackBar.svg?style=flat" alt="Version">
    </a>
-   <a href="http://cocoapods.org/pods/test">
-      <img src="https://img.shields.io/cocoapods/p/test.svg?style=flat" alt="Platform">
+   <a href="http://cocoapods.org/pods/FlexibleInputStackBar">
+      <img src="https://img.shields.io/cocoapods/p/FlexibleInputStackBar.svg?style=flat" alt="Platform">
    </a>
    <a href="https://github.com/Carthage/Carthage">
       <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
@@ -20,42 +20,42 @@
    </a>
 </p>
 
-# test
+# FlexibleInputStackBar
 
 <p align="center">
-ℹ️ Short description of test
+Customizable input accessory view
 </p>
 
 ## Features
 
-- [x] ℹ️ Add test features
+- [x] FlexibleInputStackBar has two UIStackView at left and right.
 
 ## Example
 
-The example application is the best way to see `test` in action. Simply open the `test.xcodeproj` and run the `Example` scheme.
+The example application is the best way to see `FlexibleInputStackBarDemo` in action. Simply open the `Demo.xcworkspace`.
 
 ## Installation
 
 ### CocoaPods
 
-test is available through [CocoaPods](http://cocoapods.org). To install
+FlexibleInputStackBar is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```bash
-pod 'test'
+pod 'FlexibleInputStackBar'
 ```
 
 ### Carthage
 
 [Carthage](https://github.com/Carthage/Carthage) is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.
 
-To integrate test into your Xcode project using Carthage, specify it in your `Cartfile`:
+To integrate FlexibleInputStackBar into your Xcode project using Carthage, specify it in your `Cartfile`:
 
 ```ogdl
-github "Kazumasa Shimomura/test"
+github "kzumu/FlexibleInputStackBar"
 ```
 
-Run `carthage update` to build the framework and drag the built `test.framework` into your Xcode project. 
+Run `carthage update` to build the framework and drag the built `FlexibleInputStackBar.framework` into your Xcode project. 
 
 On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase” and add the Framework path as mentioned in [Carthage Getting started Step 4, 5 and 6](https://github.com/Carthage/Carthage/blob/master/README.md#if-youre-building-for-ios-tvos-or-watchos)
 
@@ -65,17 +65,13 @@ To integrate using Apple's [Swift Package Manager](https://swift.org/package-man
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/Kazumasa Shimomura/test.git", from: "1.0.0")
+    .package(url: "https://github.com/kzumu/FlexibleInputStackBar.git", from: "0.0.2")
 ]
 ```
 
-### Manually
-
-If you prefer not to use any of the aforementioned dependency managers, you can integrate test into your project manually. Simply drag the `Sources` Folder into your Xcode project.
-
 ## Usage
+Under constructing...
 
-ℹ️ Describe the usage of your Kit
 
 ## Contributing
 Contributions are very welcome 🙌
@@ -83,8 +79,8 @@ Contributions are very welcome 🙌
 ## License
 
 ```
-test
-Copyright (c) 2019 Kazumasa Shimomura shimomura_kazumasa@cyberagent.co.jp
+FlexibleInputStackBar
+Copyright (c) 2019 Kazumasa Shimomura kazu.devapp@gmail.com
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
