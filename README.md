@@ -26,9 +26,14 @@
 Customizable input accessory view
 </p>
 
+## Video of example
+![](https://raw.githubusercontent.com/kzumu/FlexibleInputStackBar/resource/Resources/demo.gif)
+
 ## Features
 
+- [x] You can create an bar on the keyboard with easy way.
 - [x] FlexibleInputStackBar has two UIStackView at left and right.
+
 
 ## Example
 
@@ -70,7 +75,33 @@ dependencies: [
 ```
 
 ## Usage
-Under constructing...
+```swift
+import FlexibleInputStackBar
+
+class ViewController: UIViewController {
+    private let textField: UITextField = {
+        let field = UITextField()
+        return field
+    }()
+
+    private lazy var flexibleInputStackBar: FlexibleInputStackBar = {
+        let bar = FlexibleInputStackBar(height: 40)
+        bar.addArrangedSubviewToLeft(leftButton1)
+        bar.addArrangedSubviewToRight(rightButton2)
+        return bar
+    }()
+    private let leftButton1 = UIButton(frame: .init(x: 0, y: 0, width: 40, height: 40))
+    private let rightButton1 = UIButton(frame: .init(x: 0, y: 0, width: 40, height: 40))
+
+    override var inputAccessoryView: UIView? { return flexibleInputStackBar }
+    override var canBecomeFirstResponder: Bool { return true } // if you set true, always input bar is shown.
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        view.addSubview(textField)
+    }
+```
 
 
 ## Contributing
