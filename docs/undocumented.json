@@ -1,0 +1,82 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 11,
+      "symbol": "FlexibleInputStackBar",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 12,
+      "symbol": "FlexibleInputStackBar.Configuration",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 13,
+      "symbol": "FlexibleInputStackBar.Configuration.itemSpacing",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 14,
+      "symbol": "FlexibleInputStackBar.Configuration.leftStackViewMargin",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 15,
+      "symbol": "FlexibleInputStackBar.Configuration.rightStackViewMargin",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 17,
+      "symbol": "FlexibleInputStackBar.Configuration.default",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 36,
+      "symbol": "FlexibleInputStackBar.configuration",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 42,
+      "symbol": "FlexibleInputStackBar.init(height:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 50,
+      "symbol": "FlexibleInputStackBar.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 78,
+      "symbol": "FlexibleInputStackBar.addArrangedSubviewToRight(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/s06100/Desktop/test/FlexibleInputStackBar/FlexibleInputStackBar/FlexibleInputStackBar.swift",
+      "line": 82,
+      "symbol": "FlexibleInputStackBar.addArrangedSubviewToLeft(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/s06100/Desktop/test/FlexibleInputStackBar"
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>FlexibleInputStackBar  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="FlexibleInputStackBar  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">FlexibleInputStackBar Docs</a> (0% documented)</p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">FlexibleInputStackBar Reference</a>
+        <img id="carat" src="img/carat.png" />
+        FlexibleInputStackBar  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/FlexibleInputStackBar.html">FlexibleInputStackBar</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/FlexibleInputStackBar/Configuration.html">– Configuration</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <p align="center">
+   <img width="200" src="https://raw.githubusercontent.com/SvenTiigi/SwiftKit/gh-pages/readMeAssets/SwiftKitLogo.png" alt="FlexibleInputStackBar Logo">
+</p>
+
+<p align="center">
+   <a href="https://developer.apple.com/swift/">
+      <img src="https://img.shields.io/badge/Swift-5.0-orange.svg?style=flat" alt="Swift 5.0">
+   </a>
+   <a href="http://cocoapods.org/pods/FlexibleInputStackBar">
+      <img src="https://img.shields.io/cocoapods/v/FlexibleInputStackBar.svg?style=flat" alt="Version">
+   </a>
+   <a href="http://cocoapods.org/pods/FlexibleInputStackBar">
+      <img src="https://img.shields.io/cocoapods/p/FlexibleInputStackBar.svg?style=flat" alt="Platform">
+   </a>
+   <a href="https://github.com/Carthage/Carthage">
+      <img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage Compatible">
+   </a>
+   <a href="https://github.com/apple/swift-package-manager">
+      <img src="https://img.shields.io/badge/Swift%20Package%20Manager-compatible-brightgreen.svg" alt="SPM">
+   </a>
+</p>
+<h1 id='flexibleinputstackbar' class='heading'>FlexibleInputStackBar</h1>
+
+<p align="center">
+Customizable input accessory view
+</p>
+<h2 id='video-of-example' class='heading'>Video of example</h2>
+
+<p><img src="https://raw.githubusercontent.com/kzumu/FlexibleInputStackBar/resource/Resources/demo.gif" alt=""></p>
+<h2 id='features' class='heading'>Features</h2>
+
+<ul>
+<li>[x] You can create an bar on the keyboard with easy way.</li>
+<li>[x] FlexibleInputStackBar has two UIStackView at left and right.</li>
+</ul>
+<h2 id='example' class='heading'>Example</h2>
+
+<p>The example application is the best way to see <code>FlexibleInputStackBarDemo</code> in action. Simply open the <code>Demo.xcworkspace</code>.</p>
+<h2 id='installation' class='heading'>Installation</h2>
+<h3 id='cocoapods' class='heading'>CocoaPods</h3>
+
+<p>FlexibleInputStackBar is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
+it, simply add the following line to your Podfile:</p>
+<pre class="highlight shell"><code>pod <span class="s1">'FlexibleInputStackBar'</span>
+</code></pre>
+<h3 id='carthage' class='heading'>Carthage</h3>
+
+<p><a href="https://github.com/Carthage/Carthage">Carthage</a> is a decentralized dependency manager that builds your dependencies and provides you with binary frameworks.</p>
+
+<p>To integrate FlexibleInputStackBar into your Xcode project using Carthage, specify it in your <code>Cartfile</code>:</p>
+<pre class="highlight plaintext"><code>github "kzumu/FlexibleInputStackBar"
+</code></pre>
+
+<p>Run <code>carthage update</code> to build the framework and drag the built <code>FlexibleInputStackBar.framework</code> into your Xcode project. </p>
+
+<p>On your application targets’ “Build Phases” settings tab, click the “+” icon and choose “New Run Script Phase” and add the Framework path as mentioned in <a href="https://github.com/Carthage/Carthage/blob/master/README.md#if-youre-building-for-ios-tvos-or-watchos">Carthage Getting started Step 4, 5 and 6</a></p>
+<h3 id='swift-package-manager' class='heading'>Swift Package Manager</h3>
+
+<p>To integrate using Apple&rsquo;s <a href="https://swift.org/package-manager/">Swift Package Manager</a>, add the following as a dependency to your <code>Package.swift</code>:</p>
+<pre class="highlight swift"><code><span class="nv">dependencies</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">.</span><span class="nf">package</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="s">"https://github.com/kzumu/FlexibleInputStackBar.git"</span><span class="p">,</span> <span class="nv">from</span><span class="p">:</span> <span class="s">"0.0.2"</span><span class="p">)</span>
+<span class="p">]</span>
+</code></pre>
+<h2 id='usage' class='heading'>Usage</h2>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">FlexibleInputStackBar</span>
+
+<span class="kd">class</span> <span class="kt">ViewController</span><span class="p">:</span> <span class="kt">UIViewController</span> <span class="p">{</span>
+    <span class="kd">private</span> <span class="k">let</span> <span class="nv">textField</span><span class="p">:</span> <span class="kt">UITextField</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">field</span> <span class="o">=</span> <span class="kt">UITextField</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">field</span>
+    <span class="p">}()</span>
+
+    <span class="kd">private</span> <span class="kd">lazy</span> <span class="k">var</span> <span class="nv">flexibleInputStackBar</span><span class="p">:</span> <span class="kt">FlexibleInputStackBar</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="k">let</span> <span class="nv">bar</span> <span class="o">=</span> <span class="kt">FlexibleInputStackBar</span><span class="p">(</span><span class="nv">height</span><span class="p">:</span> <span class="mi">40</span><span class="p">)</span>
+        <span class="n">bar</span><span class="o">.</span><span class="nf">addArrangedSubviewToLeft</span><span class="p">(</span><span class="n">leftButton1</span><span class="p">)</span>
+        <span class="n">bar</span><span class="o">.</span><span class="nf">addArrangedSubviewToRight</span><span class="p">(</span><span class="n">rightButton2</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">bar</span>
+    <span class="p">}()</span>
+    <span class="kd">private</span> <span class="k">let</span> <span class="nv">leftButton1</span> <span class="o">=</span> <span class="kt">UIButton</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">40</span><span class="p">))</span>
+    <span class="kd">private</span> <span class="k">let</span> <span class="nv">rightButton1</span> <span class="o">=</span> <span class="kt">UIButton</span><span class="p">(</span><span class="nv">frame</span><span class="p">:</span> <span class="o">.</span><span class="nf">init</span><span class="p">(</span><span class="nv">x</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">y</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span> <span class="nv">width</span><span class="p">:</span> <span class="mi">40</span><span class="p">,</span> <span class="nv">height</span><span class="p">:</span> <span class="mi">40</span><span class="p">))</span>
+
+    <span class="k">override</span> <span class="k">var</span> <span class="nv">inputAccessoryView</span><span class="p">:</span> <span class="kt">UIView</span><span class="p">?</span> <span class="p">{</span> <span class="k">return</span> <span class="n">flexibleInputStackBar</span> <span class="p">}</span>
+
+     <span class="c1">// if you return true, always input bar is shown.</span>
+    <span class="k">override</span> <span class="k">var</span> <span class="nv">canBecomeFirstResponder</span><span class="p">:</span> <span class="kt">Bool</span> <span class="p">{</span> <span class="k">return</span> <span class="kc">true</span> <span class="p">}</span>
+
+    <span class="k">override</span> <span class="kd">func</span> <span class="nf">viewDidLoad</span><span class="p">()</span> <span class="p">{</span>
+        <span class="k">super</span><span class="o">.</span><span class="nf">viewDidLoad</span><span class="p">()</span>
+
+        <span class="n">view</span><span class="o">.</span><span class="nf">addSubview</span><span class="p">(</span><span class="n">textField</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre>
+<h2 id='contributing' class='heading'>Contributing</h2>
+
+<p>Contributions are very welcome 🙌</p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>Copyright 2019 FlexibleInputStackBar</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>

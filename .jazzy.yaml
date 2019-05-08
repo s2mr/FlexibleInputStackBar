@@ -2,6 +2,6 @@
 
 copyright: Copyright 2019 FlexibleInputStackBar
 author: Kazumasa Shimomura
-xcodebuild_arguments: [-target, FlexibleInputStackBar-iOS]
+xcodebuild_arguments: [-target, FlexibleInputStackBar]
 clean: true
-output: ./Documentation
+output: ./docs
