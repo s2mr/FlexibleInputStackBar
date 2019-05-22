@@ -9,6 +9,7 @@
    <a href="http://cocoapods.org/pods/FlexibleInputStackBar">
       <img src="https://img.shields.io/cocoapods/v/FlexibleInputStackBar.svg?style=flat" alt="Version">
    </a>
+<a href="https://app.fossa.io/projects/git%2Bgithub.com%2Fkzumu%2FFlexibleInputStackBar?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkzumu%2FFlexibleInputStackBar.svg?type=shield"/></a>
    <a href="http://cocoapods.org/pods/FlexibleInputStackBar">
       <img src="https://img.shields.io/cocoapods/p/FlexibleInputStackBar.svg?style=flat" alt="Platform">
    </a>
@@ -109,3 +110,7 @@ class ViewController: UIViewController {
 
 ## Contributing
 Contributions are very welcome 🙌
+
+
+## License
+[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkzumu%2FFlexibleInputStackBar.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkzumu%2FFlexibleInputStackBar?ref=badge_large)
